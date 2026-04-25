@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Expense Dashboard</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>Add Expense</h2>
+            <input id="amount" placeholder="Amount">
+            <input id="desc" placeholder="Description">
+            <input id="category" placeholder="Category (Food, Travel...)">
+            <button onclick="addExpense()">Add</button>
+        </div>
+
+        <div class="card">
+            <h2>Set Budget</h2>
+            <input id="budgetAmount" placeholder="Monthly Limit">
+            <input id="budgetCategory" placeholder="Category">
+            <button onclick="setBudget()">Set</button>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h2>Budget Status</h2>
+        <table id="budgetTable">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Limit</th>
+                    <th>Spent</th>
+                    <th>Remaining</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>All Expenses</h2>
+        <table id="expenseTable">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

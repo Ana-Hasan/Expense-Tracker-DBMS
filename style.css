@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: Cinzel;
+    background:rgb(82, 119, 255);
+    background-image: url("ChatGPT\ Image\ Apr\ 25\,\ 2026\,\ 08_25_31\ PM.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 30px 20px; 
+}
+
+h1 {
+    text-align: center;
+    font-family: Cinzel;
+    font-size: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start; 
+}
+
+.card {
+    background: rgb(255, 230, 184);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-bottom: 20px; 
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: rgb(255, 230, 184);
+    border: none;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th {
+    background: black;
+    color: rgb(255, 230, 184);
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+.progress-bar {
+    height: 6px;
+    background: #eee;
+}
+
+.progress-fill {
+    height: 100%;
+    background: black;
+}
+
+.card + .card {
+    margin-top: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
